@@ -1,0 +1,47 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "AGarcia"
+date: "11/6/2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Peer-graded Assignment: R Markdown Presentation & Plotly
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+## Dataset: oil-prices
+
+Dataset used for the graphic is an anual oil-prices (brent) between May 1987 and September 2018. Data are taking monthly, from 15 of each month between the mentioned years.
+
+Data was downloaded from this place:
+
+https://github.com/datasets/oil-prices
+
+## Brent: explanation 
+
+A blended crude stream produced in the North Sea region which serves as a reference or "marker" for pricing a number of other crude streams
+
+## Dataset preparation
+
+Preprocesing the dataset was not needed on this case, just read the csv file.
+An example of the dataset (head) is also displayed bellow.
+
+```{r brent, echo = TRUE}
+brent <- read.csv("brent-monthly.csv", header = TRUE)
+head(brent)
+```
+
+## Slide with Plot
+
+```{r load}
+library(plotly)
+```
+
+```{r plot,  echo = TRUE}
+plot_ly(brent, x = ~Date, y = ~Price, type = "scatter", mode = "lines")
+```
+
