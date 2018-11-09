@@ -1,0 +1,80 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "AGarcia"
+date: "11/9/2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch
+
+This is the Course Project for Shiny Application and Reproducible Pitch.  This project has two part:
+
+- Shiny Application
+- Reproducible Pitch Presentation
+
+## Shiny Application - Description
+
+First part consists of the execution of the following tasks:
+
+- Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+- Deploy the application on Rstudio's shiny server
+- Share the application link by pasting it into the provided text box
+- Share your server.R and ui.R code on github
+
+## Shiny Application - Links
+
+- Application link by pasting it into the provided text box. 
+[Shinyapps link](https://anagarciag.shinyapps.io/week4/)
+
+- server.R and ui.R code on github. 
+[Github link](https://github.com/AnaGarciaG/DevelopingDataProducts)
+
+
+## Shiny Application - About the application
+
+Application display as a table the values for the dataset Wage. This dataset displays wage and other data for a group of 3000 male workers in the Mid-Atlantic region.
+
+The application allows the user to filter for all the fields displayed on the table.  Only the selected elements are displayed on the table.
+
+
+## About Wage dataset
+
+Wage is a data frame with 3000 observations on the following 11 variables.
+
+More information here [link](http://thedataweb.rm.census.gov/TheDataWeb)
+
+- **year**: Year that wage information was recorded
+- **age**: Age of worker
+- **maritl**: A factor with levels indicating marital status 
+    + 1. Never Married 
+    + 2. Married 
+    + 3. Widowed 
+    + 4. Divorced and 
+    + 5. Separated 
+- **race**: A factor with levelsindicating race
+    + 1. White 
+    + 2. Black 
+    + 3. Asian and 
+    + 4. Other
+- **education**: A factor with levels indicating education level
+    + 1. < HS Grad 
+    + 2. HS Grad 
+    + 3. Some College 
+    + 4. College Grad and 
+    + 5. Advanced Degree 
+- **region**: Region of the country (mid-atlantic only)
+- **jobclass**: A factor with levels 1. Industrial and 2. Information indicating type of job
+- **health**: A factor with levels 1. <=Good and 2. >=Very Good indicating health level of worker
+- **health_ins**: A factor with levels 1. Yes and 2. No indicating whether worker has health insurance
+- **logwage**: Log of workers wage
+- **wage**: Workers raw wage
+
+
+
+
+
+
